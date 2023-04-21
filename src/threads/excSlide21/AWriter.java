@@ -20,6 +20,7 @@ public class AWriter implements Runnable
     @Override
     public void run()
     {
+        System.out.println("I have control of the processor [" + Thread.currentThread().getId() + "]");
         for (int i = 0; i < 3; i++) {
             a1.add(sValue+i);
         }
