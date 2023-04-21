@@ -23,7 +23,7 @@ public class SArray
     // The add method should be written so that issues will arise when multiple threads are populating the array.
     public synchronized void add(int value)
     {
-        System.out.println(Thread.currentThread());
+        System.out.println("Thread = "+Thread.currentThread().getId());
         ar[this.nIndex] = value;
         try
         {
